@@ -9,7 +9,7 @@
     "build": "rm -rf dist; tsc -p tsconfig.json",
     "test": "jest .",
     "lint": "eslint .",
-    "preinstall": "npm run install && npm run build",
+    "preinstall": "npm install && npm run build",
     "prepublishOnly": "npm run lint && npm test && npm run build"
   },
   "gitHead": "a37306eba0e762af096db642fa22f07194014cfd",
