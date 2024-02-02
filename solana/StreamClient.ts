@@ -145,7 +145,7 @@ export default class SolanaStreamClient extends BaseStreamClient {
       withdrawalFrequency = 0,
       partner,
       customInstructions=[],
-    }: ICreateStreamData,
+    }: ICreateStreamData & { customInstructions?: TransactionInstruction[], },
     { sender, metadataPubKeys, isNative = false }: ICreateStreamSolanaExt
   ): Promise<ICreateResult> {
     if (!sender.publicKey) {
@@ -265,7 +265,7 @@ export default class SolanaStreamClient extends BaseStreamClient {
       withdrawalFrequency = 0,
       partner,
       customInstructions=[],
-    }: ICreateStreamData,
+    }: ICreateStreamData & { customInstructions?: TransactionInstruction[], },
     { sender, metadataPubKeys, isNative = false }: ICreateStreamSolanaExt
   ): Promise<ICreateResult> {
     if (!sender.publicKey) {

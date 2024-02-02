@@ -56,7 +56,6 @@ export interface CreateStreamData {
   transferableByRecipient: boolean;
   automaticWithdrawal?: boolean;
   withdrawalFrequency?: number;
-  customInstructions?: TransactionInstruction[],
 }
 
 export interface MultiRecipient {
